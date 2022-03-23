@@ -337,4 +337,58 @@ template {
 [hidden] {
   display: none;
 }
+
+@font-face {
+  font-family: "robotobold";
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotothin";
+  src: url("../fonts/roboto-thin-webfont.woff2") format("woff2"), url("../fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.ns-menu__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "robotobold", sans-serif;
+  font-size: 1.25rem;
+}
+
+.ns-menu__box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: auto;
+  flex-direction: column;
+}
+@media only screen and (min-width: 576px) {
+  .ns-menu__box {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.ns-menu__item {
+  text-align: center;
+  padding: 0.625rem;
+  transition: all 400ms;
+}
+.ns-menu__item:link {
+  color: #665600;
+  background: #0e0e0e;
+  text-decoration: underline;
+}
+.ns-menu__item:visited {
+  text-decoration: underline;
+}
+.ns-menu__item:hover {
+  color: gold;
+  background: silver;
+  text-decoration: underline;
+}
+.ns-menu__item:active {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=main.css.map */
